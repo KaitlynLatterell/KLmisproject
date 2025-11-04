@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/video.css">
+    <script src="js/welcome-video.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="discover.html">Discover UMD</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="game.html">Game</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+        <h1>Kaitlyn Latterell</h1>
+        
+        <div class="profile-section">
+            <div class="profile-image-wrapper">
+                <img src="images/headshot.jpg" alt="Profile Photo" class="profile-image">
+            </div>
+            <div class="introduction">
+                <h2>About Me</h2>
+                <!-- Add your introduction paragraph here -->
+                <p>Hello! My name is Kaitlyn Latterell, and I am originally from Foley, Minnesota. I am a first-year student at the University of Minnesota Duluth, majoring in Healthcare Management. I completed many college credits throughout highschool so my expected graduation year from UMD is 2028. I have many fun hobbies and interests I would love to share with you! Keep exploring my page to get to know who I am & my goals for life!
+
+</p>
+            </div>
+        </div>
+
+        <div class="sections-container">
+            <section class="content-section hobbies-section">
+                <div class="section-content">
+                    <h2>Hobbies</h2>
+                    <div class="hobbies-content">
+                        <div class="hobbies-text">
+                            <p>I am passionate about many things in life but here are some of my favorites:</p>
+                            <ul>
+                            <p>
+
+                            </p>
+                                <li>Hiking
+                                    <p>- Finding peace and adventure on the trails</p>
+                                </li>
+                                <li>Running
+                                    <p>- Enjoying the rhythm of my feet on the pavement</p>
+                                </li>
+                                <li>Going to concerts
+                                    <p>- Experiencing live music and the energy of the crowd</p>
+                                </li>
+                                <li>Baking
+                                    <p>- Creating delicious treats for friends and family</p>
+                                </li>
+                                <li>Traveling
+                                    <p>- Exploring new places and cultures</p>
+                                </li>
+                            </ul>
+                            <div class="landscape-drawing">
+                                <img src="images/line_drawing-removebg-preview.png" alt="Line Drawing" class="line-drawing">
+                            </div>
+                        </div>
+                        <div class="hobby-image-container">
+                            <img src="images/IMG_9567.jpeg" alt="Hiking in nature" class="hobby-image">
+                            <p class="image-caption">This was taken in Costa Rica!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section video-section">
+                <div class="section-content">
+                    <h2>Welcome Video</h2>
+                    <div class="welcome-video-container">
+                        <div class="video-wrapper">
+                            <div class="video-image">
+                                <canvas id="animationCanvas"></canvas>
+                            </div>
+                            <div class="video-controls">
+                                <button id="playButton" class="play-button">
+                                    <svg viewBox="0 0 24 24" class="play-icon">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </button>
+                                <div class="progress-container">
+                                    <div id="progressBar" class="progress-bar">
+                                        <div id="progressFill" class="progress-fill"></div>
+                                    </div>
+                                    <span id="timeDisplay" class="time-display">0:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+
