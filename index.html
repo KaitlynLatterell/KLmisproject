@@ -29,7 +29,6 @@
             </div>
             <div class="introduction">
                 <h2>About Me</h2>
-                <!-- Add your introduction paragraph here -->
                 <p>Hello! My name is Kaitlyn Latterell, and I am originally from Foley, Minnesota. I am a first-year student at the University of Minnesota Duluth, majoring in Healthcare Management. I completed many college credits throughout highschool so my expected graduation year from UMD is 2028. I have many fun hobbies and interests I would love to share with you! Keep exploring my page to get to know who I am & my goals for life!
 
 </p>
@@ -79,6 +78,9 @@
                 <div class="section-content">
                     <h2>Welcome Video</h2>
                     <div class="welcome-video-container">
+                        
+                        <audio id="welcomeAudio" src="audio/converted_audio.mp3" preload="auto"></audio>
+                        
                         <div class="video-wrapper">
                             <div class="video-image">
                                 <canvas id="animationCanvas"></canvas>
@@ -102,6 +104,26 @@
             </section>
         </div>
     </main>
+
+    <script>
+        // Wait for the document to be fully loaded before running the script
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Get the play button and the audio element by their IDs
+            const playButton = document.getElementById('playButton');
+            const welcomeAudio = document.getElementById('welcomeAudio');
+
+            // Check if both elements were found
+            if (playButton && welcomeAudio) {
+                // Add a click event listener to the play button
+                playButton.addEventListener('click', () => {
+                    // When the button is clicked, play the audio
+                    welcomeAudio.play();
+                });
+            } else {
+                console.error('Could not find play button or audio element.');
+            }
+        });
+    </script>
 </body>
 </html>
-
